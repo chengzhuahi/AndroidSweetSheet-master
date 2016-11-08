@@ -1,13 +1,11 @@
 package com.mingle.myapplication;
 
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -18,7 +16,6 @@ import com.mingle.sweetpick.DimEffect;
 import com.mingle.sweetpick.RecyclerViewDelegate;
 import com.mingle.sweetpick.SweetSheet;
 import com.mingle.sweetpick.ViewPagerDelegate;
-
 
 import java.util.ArrayList;
 
@@ -101,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 //根据返回值, true 会关闭 SweetSheet ,false 则不会.
                 Toast.makeText(MainActivity.this, menuEntity1.title + "  " + position, Toast.LENGTH_SHORT).show();
                 return true;
+
             }
         });
 
